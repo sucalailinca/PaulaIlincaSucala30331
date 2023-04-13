@@ -30,6 +30,7 @@ public class ExecutionThread extends Thread {
                 e.printStackTrace();
             }
             System.out.println(this.getName() + " - STATE 3");
+            System.out.println(this.getName() + " - STATE 4");
         }
     }
 

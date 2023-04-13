@@ -1,11 +1,16 @@
 package Lab4.App4;
 
-import Lab4.App1.ExecutionThread;
-
 public class Main {
-    public static void main(String[] args) {
-        Integer monitor = new Integer(1);
+    public static void main (String[] args) {
+        Integer[] monitor = {0, 1};
+        int sleep_fix, activity_min, activity_max;
 
-        new ExecutionThread(monitor, 2, 3, 7);
+        new ExecutionThread(monitor,  0, 2, 3).start();
+        new ExecutionThread(monitor,  0, 3, 5).start();
+        new ExecutionThread(monitor,  0, 4, 6).start();
+
     }
 }
+
+
+
